@@ -16,11 +16,11 @@ import webserver
     # database_url = config['database_url']
 
 # for replit
-'''
+
 token = os.environ.get("token")
 prefix = os.environ.get("prefix")
 database_url = os.environ.get("database_url")
-'''
+
 
 intents = discord.Intents().all()
 bot = commands.Bot(command_prefix=prefix, intents = discord.Intents.all())
