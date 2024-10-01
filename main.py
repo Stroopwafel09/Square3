@@ -7,7 +7,7 @@ import sys
 import asyncpg
 from asyncpg.pool import create_pool
 import json
-import keep_alive
+import webserver
 
 with open ('config/botconfig.json', 'r') as f:
     config = json.load(f)
