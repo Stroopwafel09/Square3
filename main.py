@@ -54,5 +54,5 @@ if __name__ == "__main__":
             traceback.print_exc()
 
 webserver.keep_alive()
-bot.loop.run_until_complete(create_db_pool())
+# bot.loop.run_until_complete(create_db_pool())
 bot.run(token)
