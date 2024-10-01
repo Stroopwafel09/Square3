@@ -11,7 +11,7 @@ import webserver
 
 with open ('config/botconfig.json', 'r') as f:
     config = json.load(f)
-    token = config['token']
+    token = os.environ.get("token")
     prefix = config['prefix']
     database_url = config['database_url']
 
