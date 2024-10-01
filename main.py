@@ -9,11 +9,11 @@ from asyncpg.pool import create_pool
 import json
 import webserver
 
-with open ('config/botconfig.json', 'r') as f:
-    config = json.load(f)
-    token = os.environ.get("token")
-    prefix = config['prefix']
-    database_url = config['database_url']
+# with open ('config/botconfig.json', 'r') as f:
+ #   config = json.load(f)
+  #  token = os.environ.get("token")
+   # prefix = config['prefix']
+    # database_url = config['database_url']
 
 # for replit
 '''
@@ -53,6 +53,6 @@ if __name__ == "__main__":
             print(f'Error loading {values}', file=sys.stderr)
             traceback.print_exc()
 
-keep_alive.keep_alive()
+webserver.keep_alive()
 bot.loop.run_until_complete(create_db_pool())
 bot.run(token)
